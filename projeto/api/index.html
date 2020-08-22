@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<title>Projeto</title>
+	<style type="text/css">
+		table, th{
+			border: 1px solid black
+		}
+		body{
+			display: flex;
+			justify-content: center;
+		}
+		input{
+			width: 6rem;
+		}
+		body div{
+			padding: 1rem;
+		}
+		td{
+			padding:0.1rem;
+			background-color:#c6c6c6
+		}
+	</style>
+</head>
+<body onload="carregou()">
+	<div>READ
+		<table id="readTable">
+			<tr>
+			  <th>idPessoa</th>
+			  <th>nome</th>
+			  <th>cpf</th>
+			  <th>whatsapp</th>
+			  <th>DELETE</th>
+			</tr>
+			<tr>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			</tr>
+		  </table>
+	</div>
+	<div>UPDATE
+		  <table id="updateTable">
+			<tr>
+			  <th>nome</th>
+			  <th>cpf</th>
+			  <th>whatsapp</th>
+			</tr>
+			<tr>
+			  <td><input type="text" value=""></td>
+			  <td><input type="text" value=""></td>
+			  <td><input type="text" value=""></td>
+			  <td><button>Atualizar</button></td>
+			</tr>
+		  </table>
+	</div>
+	<div>CREATE
+		  <table>
+			<tr>
+			  <th>nome</th>
+			  <th>cpf</th>
+			  <th>whatsapp</th>
+			</tr>
+			<tr>
+			  <td><input type="text" placeholder="Digite aqui..."></td>
+			  <td><input type="text" placeholder="Digite aqui..."></td>
+			  <td><input type="text" placeholder="Digite aqui..."></td>
+			  <td><button>Inserir</button></td>
+			</tr>
+		  </table>
+		  </div>
+	<script src="get.js"></script>
+	<script src="post.js"></script>
+	<script>
+		function carregou(){
+			readTable()
+			updateTable()
+		}
+	</script>
+</body>
+</html>
